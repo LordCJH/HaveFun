@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/images"/>
+    <qresource prefix="/">
+        <file>pic/kunkun.gif</file>
+        <file>pic/yingerkunkun.jpg</file>
+        <file>pic/youerkunkun.jfif</file>
+        <file>pic/tutoukunkun.jpg</file>
+        <file>pic/dark_kunkun.jpg</file>
+        <file>pic/jianpankunkun.jpg</file>
+        <file>pic/kedaya_kunkun.jpg</file>
+        <file>pic/naqiukunkun.jpg</file>
+        <file>pic/youerkunkun.jpg</file>
+        <file>pic/shengji0.png</file>
+        <file>pic/lushihan_kankan.jpg</file>
+        <file>pic/dakaiyinliang.jpg</file>
+        <file>pic/guanbiyinliang.jpg</file>
+        <file>pic/shayuguowang.jpg</file>
+        <file>pic/kunkun_renxing.jpg</file>
+        <file>pic/kunkun_xizao.gif</file>
+    </qresource>
+</RCC>
