@@ -41,6 +41,7 @@ public:
     QLabel *tiaowu_tishi;
     QLabel *weishi_tishi;
     QPushButton *bathe;
+    QPushButton *pwf;
 
     void setupUi(QWidget *Widget)
     {
@@ -221,6 +222,22 @@ public:
 "QPushButton:pressed {\n"
 "	background-color:rgba(85, 170, 255, 200);\n"
 "}"));
+        pwf = new QPushButton(Widget);
+        pwf->setObjectName(QString::fromUtf8("pwf"));
+        pwf->setGeometry(QRect(930, 650, 141, 71));
+        pwf->setFont(font1);
+        pwf->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	border:3px solid black;\n"
+"	background-color:rgba(105, 150, 205, 200);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"	background-color:rgba(85, 170, 255, 200);\n"
+"}"));
 
         retranslateUi(Widget);
 
@@ -249,6 +266,7 @@ public:
         tiaowu_tishi->setText(QApplication::translate("Widget", "\350\247\243\351\224\201\346\226\260\345\212\237\350\203\275\357\274\232\350\267\263\350\210\236", nullptr));
         weishi_tishi->setText(QApplication::translate("Widget", "\347\202\271\345\207\273\345\226\202\351\243\237\346\235\245\350\277\233\350\241\214\351\245\262\345\205\273", nullptr));
         bathe->setText(QApplication::translate("Widget", "\346\264\227\346\276\241", nullptr));
+        pwf->setText(QApplication::translate("Widget", "\347\216\251\350\200\215", nullptr));
     } // retranslateUi
 
 };
