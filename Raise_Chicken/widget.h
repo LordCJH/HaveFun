@@ -24,6 +24,7 @@ public:
     int unlock_skill_timerId;
     int dance_timerId;
     int bathe_timerId;
+    int pwf_timerId;
 
     QIcon *on_volumn;
     QIcon *off_volumn;
@@ -45,6 +46,8 @@ private slots:
     void on_dance_clicked();
 
     void on_bathe_clicked();
+
+    void on_pwf_clicked();
 
 private:
     Ui::Widget *ui;

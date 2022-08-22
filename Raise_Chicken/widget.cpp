@@ -25,6 +25,7 @@ Widget::Widget(QWidget *parent) :
     ui->jinjie->hide();
     ui->dance->hide();
     ui->bathe->hide();
+    ui->pwf->hide();
 
     ui->tiaowu_tishi->hide();
 
@@ -148,9 +149,12 @@ void Widget::on_seed_food_clicked()
         //tishi_movie->stop();
         //tishi_movie->start();
         //ui->tishi->setMovie(tishi_movie);
+        ui->weishi_tishi->setText("点击按钮让坤坤洗澡啦！");
+        ui->weishi_tishi->show();
+        ui->bathe->show();
         ui->jinhua_label->show();
         ui->tishi->show();
-        timerId = startTimer(1000);
+        unlock_skill_timerId = startTimer(1000);
         break;
     case 10:
         ui->kunkun_name->setText("可达鸭坤坤");
@@ -174,12 +178,10 @@ void Widget::on_seed_food_clicked()
         //tishi_movie->stop();
         //tishi_movie->start();
         //ui->tishi->setMovie(tishi_movie);
-        ui->weishi_tishi->setText("点击按钮让kk洗澡啦！");
-        ui->weishi_tishi->show();
-        ui->bathe->show();
+
         ui->jinhua_label->show();
         ui->tishi->show();
-        unlock_skill_timerId = startTimer(1000);
+        timerId = startTimer(1000);
         break;
     case 15:
         ui->kunkun_name->setText("黑暗哲学坤坤");
@@ -269,10 +271,10 @@ void Widget::on_seed_food_clicked()
             break;
         }
 
-        ui->kunkun_name->setText("坤坤");
+        ui->kunkun_name->setText("你干嘛坤坤");
 
         movie->stop();
-        movie->setFileName(":/pic/shengji0.png");
+        movie->setFileName(":/pic/niganma.jpg");
         movie->start();
 
         /* 设置坤坤等级 */
@@ -281,6 +283,41 @@ void Widget::on_seed_food_clicked()
 
         kunkun_experience = 0;
         kunkun_experience_max = 3;
+
+        /* 设置坤坤成长进度条最大值 */
+        ui->kunkun_growup_value->setMaximum(kunkun_experience_max);
+        ui->kunkun_growup_value->setValue(kunkun_experience);
+
+        /* 设置升级提示 */
+        //tishi_movie->stop();
+        //tishi_movie->start();
+        //ui->tishi->setMovie(tishi_movie);
+        //ui->jinjie->show();
+        ui->jinhua_label->show();
+        ui->tishi->show();
+
+        ui->pwf->show();
+        ui->weishi_tishi->setText("叫坤坤和朋友玩吧！");
+        unlock_skill_timerId = startTimer(1000);
+        break;
+    case 33:
+        if (kunkun_stage != 2) {
+            //qDebug("%d", kunkun_stage);
+            break;
+        }
+
+        ui->kunkun_name->setText("小混混坤坤");
+
+        movie->stop();
+        movie->setFileName(":/pic/dd_kunkun.png");
+        movie->start();
+
+        /* 设置坤坤等级 */
+        kunkun_level++;
+        ui->kunkun_level->setText("9");
+
+        kunkun_experience = 4;
+        kunkun_experience_max = 4;
 
         /* 设置坤坤成长进度条最大值 */
         ui->kunkun_growup_value->setMaximum(kunkun_experience_max);
@@ -313,14 +350,8 @@ void Widget::timerEvent(QTimerEvent *event)
     qDebug("timerEvent:%d %d %d %d", event->timerId(), timerId, unlock_skill_timerId, dance_timerId);
     //killTimer(event->timerId());
     //tishi_movie->stop();
-    if (event->timerId() == timerId) {
-        qDebug("timerEvent1:%d", timerId);
-        killTimer(timerId);
-        timerId = 0;
 
-        ui->jinhua_label->hide();
-        ui->tishi->hide();
-    } else if (event->timerId() == unlock_skill_timerId) {
+    if (event->timerId() == unlock_skill_timerId) {
         qDebug("timerEvent2:%d", unlock_skill_timerId);
         killTimer(unlock_skill_timerId);
         unlock_skill_timerId = 0;
@@ -328,7 +359,19 @@ void Widget::timerEvent(QTimerEvent *event)
         ui->jinhua_label->hide();
         ui->tishi->hide();
 
+        ui->weishi_tishi->hide();
+        ui->tiaowu_tishi->hide();
 
+    } else if (event->timerId() == timerId) {
+        qDebug("timerEvent1:%d", timerId);
+        killTimer(timerId);
+        timerId = 0;
+
+        ui->jinhua_label->hide();
+        ui->tishi->hide();
+
+        //ui->weishi_tishi->hide();
+        //ui->tiaowu_tishi->hide();
     } else if (event->timerId() == dance_timerId) {
         qDebug("timerEvent3:%d", dance_timerId);
         //qDebug("dance_timerId");
@@ -341,7 +384,7 @@ void Widget::timerEvent(QTimerEvent *event)
         ui->seed_food->setEnabled(true);
         ui->dance->setEnabled(true);
         ui->bathe->setEnabled(true);
-
+        ui->pwf->setEnabled(true);
     } else if (event->timerId() == bathe_timerId) {
         qDebug("timerEvent4:%d", bathe_timerId);
         killTimer(bathe_timerId);
@@ -353,6 +396,20 @@ void Widget::timerEvent(QTimerEvent *event)
         ui->seed_food->setEnabled(true);
         ui->bathe->setEnabled(true);
         ui->dance->setEnabled(true);
+        ui->pwf->setEnabled(true);
+
+    } else if (event->timerId() == pwf_timerId) {
+        qDebug("timerEvent5:%d", pwf_timerId);
+        killTimer(bathe_timerId);
+        pwf_timerId = 0;
+        movie->stop();
+        movie->setFileName(kunkun_outlook);
+        movie->start();
+
+        ui->seed_food->setEnabled(true);
+        ui->bathe->setEnabled(true);
+        ui->dance->setEnabled(true);
+        ui->pwf->setEnabled(true);
 
     } else {
         killTimer(event->timerId());
@@ -387,6 +444,10 @@ void Widget::on_jinjie_clicked()
     kunkun_experience = 0;
     kunkun_experience_max = 2;
 
+    ui->kunkun_growup_value->setMaximum(kunkun_experience_max);
+    ui->kunkun_growup_value->setValue(kunkun_experience);
+
+
     ui->kunkun_name->setText("运球坤坤");
 
     ui->jinjie->hide();
@@ -397,7 +458,7 @@ void Widget::on_jinjie_clicked()
     ui->tiaowu_tishi->show();
 
 
-    //unlock_skill_timerId = startTimer(1000);
+    unlock_skill_timerId = startTimer(1000);
 
     //qDebug("kunkun_stage:%d", kunkun_stage);
 
@@ -409,8 +470,9 @@ void Widget::on_dance_clicked()
     ui->seed_food->setDisabled(true);
     ui->bathe->setDisabled(true);
     ui->dance->setDisabled(true);
+    ui->pwf->setDisabled(true);
 
-    ui->tiaowu_tishi->hide();
+    //ui->tiaowu_tishi->hide();
 
     kunkun_outlook = movie->fileName();
     //qDebug("%s", kunkun_outlook.toStdString().data());
@@ -429,13 +491,33 @@ void Widget::on_bathe_clicked()
     ui->seed_food->setDisabled(true);
     ui->bathe->setDisabled(true);
     ui->dance->setDisabled(true);
+    ui->pwf->setDisabled(true);
 
-    ui->weishi_tishi->hide();
+    //ui->weishi_tishi->hide();
 
     kunkun_outlook = movie->fileName();
 
     movie->stop();
     movie->setFileName(":/pic/kunkun_xizao.gif");
+    movie->start();
+
+
+    bathe_timerId = startTimer(3000);
+}
+
+void Widget::on_pwf_clicked()
+{
+    ui->seed_food->setDisabled(true);
+    ui->bathe->setDisabled(true);
+    ui->dance->setDisabled(true);
+    ui->pwf->setDisabled(true);
+
+    //ui->weishi_tishi->hide();
+
+    kunkun_outlook = movie->fileName();
+
+    movie->stop();
+    movie->setFileName(":/pic/kunkun_pwf.gif");
     movie->start();
 
 

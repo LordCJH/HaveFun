@@ -17,7 +17,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++11 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I/home/cjh/tools/QT/5.12.4/gcc_64/include -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I. -I/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++
+INCPATH       = -I. -I../../../../cjh/tools/QT/5.12.4/gcc_64/include -I../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets -I../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui -I../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I. -I../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/cjh/tools/QT/5.12.4/gcc_64/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Raise_Chicken1.0.0
-DISTDIR = /opt/Raise_Chicken/.tmp/Raise_Chicken1.0.0
+DISTDIR = /home/bilibili/am/HaveFun/Raise_Chicken/.tmp/Raise_Chicken1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/cjh/tools/QT/5.12.4/gcc_64/lib
 LIBS          = $(SUBLIBS) /home/cjh/tools/QT/5.12.4/gcc_64/lib/libQt5Widgets.so /home/cjh/tools/QT/5.12.4/gcc_64/lib/libQt5Gui.so /home/cjh/tools/QT/5.12.4/gcc_64/lib/libQt5Core.so -lGL -lpthread   
@@ -59,200 +59,200 @@ OBJECTS       = main.o \
 		widget.o \
 		qrc_pic.o \
 		moc_widget.o
-DIST          = /home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_pre.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/unix.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/linux.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/sanitize.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-base.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-unix.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/qconfig.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_functions.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_config.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_post.prf \
+DIST          = ../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_pre.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/unix.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/linux.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/sanitize.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-base.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-unix.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/qconfig.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_functions.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_config.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_post.prf \
 		.qmake.stash \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/toolchain.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_pre.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resolve_config.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_post.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qml_debug.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/warn_on.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resources.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/moc.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/opengl.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/uic.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/thread.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qmake_use.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/file_copies.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/testcase_targets.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exceptions.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/yacc.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/lex.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exclusive_builds.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/toolchain.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_pre.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resolve_config.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_post.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qml_debug.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/warn_on.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resources.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/moc.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/opengl.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/uic.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/thread.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qmake_use.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/file_copies.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/testcase_targets.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exceptions.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/yacc.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/lex.prf \
 		Raise_Chicken.pro widget.h main.cpp \
 		widget.cpp
 QMAKE_TARGET  = Raise_Chicken
@@ -266,397 +266,397 @@ first: all
 Raise_Chicken: ui_widget.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
-Makefile: Raise_Chicken.pro /home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf /home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_pre.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/unix.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/linux.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/sanitize.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base-unix.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-base.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-unix.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/qconfig.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_functions.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_config.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_post.prf \
+Makefile: Raise_Chicken.pro ../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf ../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_pre.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/unix.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/linux.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/sanitize.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base-unix.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-base.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-unix.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/qconfig.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_functions.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_config.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_post.prf \
 		.qmake.stash \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exclusive_builds.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/toolchain.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_pre.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resolve_config.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_post.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qml_debug.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/warn_on.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resources.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/moc.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/opengl.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/uic.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/thread.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qmake_use.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/file_copies.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/testcase_targets.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exceptions.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/yacc.prf \
-		/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/lex.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exclusive_builds.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/toolchain.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_pre.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resolve_config.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_post.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qml_debug.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/warn_on.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resources.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/moc.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/opengl.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/uic.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/thread.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qmake_use.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/file_copies.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/testcase_targets.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exceptions.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/yacc.prf \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/lex.prf \
 		Raise_Chicken.pro \
 		pic.qrc
 	$(QMAKE) -o Makefile Raise_Chicken.pro -spec linux-g++ CONFIG+=debug CONFIG+=qml_debug
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_pre.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/unix.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/linux.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/sanitize.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base-unix.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-base.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-unix.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/qconfig.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_functions.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_config.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_post.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_pre.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/unix.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/linux.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/sanitize.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/gcc-base-unix.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-base.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/common/g++-unix.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/qconfig.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3danimation_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dcore_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dextras_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dinput_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquick_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_3drender_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_charts_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_concurrent_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_core_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_datavisualization_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_dbus_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designer_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_edid_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_egl_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfs_kms_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eglfsdeviceintegration_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fb_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gamepad_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_glx_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_gui_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_help_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_input_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_kms_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_linuxaccessibility_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_location_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimedia_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediagsttools_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_network_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_networkauth_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_nfc_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_opengl_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioning_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_printsupport_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_purchasing_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qml_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qmltest_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quick_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_repparser_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_script_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scripttools_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_scxml_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sensors_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialbus_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_service_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_sql_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_svg_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_testlib_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_theme_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uiplugin.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_uitools_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_virtualkeyboard_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_vulkan_support_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandclient_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_waylandcompositor_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webchannel_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webengine_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecore_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginecoreheaders_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webenginewidgets_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_websockets_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_webview_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_widgets_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_x11extras_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xml_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_functions.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt_config.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++/qmake.conf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/spec_post.prf:
 .qmake.stash:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exclusive_builds.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/toolchain.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_pre.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resolve_config.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_post.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qml_debug.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/warn_on.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resources.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/moc.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/opengl.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/uic.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/thread.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qmake_use.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/file_copies.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/testcase_targets.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exceptions.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/yacc.prf:
-/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/lex.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exclusive_builds.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/toolchain.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_pre.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resolve_config.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/default_post.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qml_debug.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/warn_on.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qt.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/resources.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/moc.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/opengl.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/uic.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/unix/thread.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/qmake_use.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/file_copies.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/testcase_targets.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/exceptions.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/yacc.prf:
+../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/lex.prf:
 Raise_Chicken.pro:
 pic.qrc:
 qmake: FORCE
@@ -674,7 +674,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents pic.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents /home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents widget.h $(DISTDIR)/
 	$(COPY_FILE) --parents main.cpp widget.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents widget.ui $(DISTDIR)/
@@ -705,156 +705,159 @@ compiler_rcc_make_all: qrc_pic.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_pic.cpp
 qrc_pic.cpp: pic.qrc \
-		/home/cjh/tools/QT/5.12.4/gcc_64/bin/rcc \
-		pic/yingerkunkun.jpg \
-		pic/kunkun.gif \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/bin/rcc \
+		pic/naqiukunkun.jpg \
+		pic/guanbiyinliang.jpg \
+		pic/jianpankunkun.jpg \
+		pic/kunkun_pwf.gif \
 		pic/dark_kunkun.jpg \
-		pic/kunkun_renxing.jpg \
-		pic/kunkun_xizao.gif \
-		pic/tutoukunkun.jpg \
-		pic/lushihan_kankan.jpg \
 		pic/shayuguowang.jpg \
 		pic/youerkunkun.jpg \
 		pic/dakaiyinliang.jpg \
-		pic/naqiukunkun.jpg \
-		pic/guanbiyinliang.jpg \
-		pic/kedaya_kunkun.jpg \
-		pic/jianpankunkun.jpg \
+		pic/tutoukunkun.jpg \
 		pic/youerkunkun.jfif \
-		pic/shengji0.png
+		pic/dd_kunkun.png \
+		pic/kunkun.gif \
+		pic/shengji0.png \
+		pic/niganma.jpg \
+		pic/lushihan_kankan.jpg \
+		pic/kunkun_renxing.jpg \
+		pic/yingerkunkun.jpg \
+		pic/kunkun_xizao.gif \
+		pic/kedaya_kunkun.jpg
 	/home/cjh/tools/QT/5.12.4/gcc_64/bin/rcc -name pic pic.qrc -o qrc_pic.cpp
 
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
-moc_predefs.h: /home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/data/dummy.cpp
-	g++ -pipe -g -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h /home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/data/dummy.cpp
+moc_predefs.h: ../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/data/dummy.cpp
+	g++ -pipe -g -std=gnu++11 -Wall -W -dM -E -o moc_predefs.h ../../../../cjh/tools/QT/5.12.4/gcc_64/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_widget.cpp
 compiler_moc_header_clean:
 	-$(DEL_FILE) moc_widget.cpp
 moc_widget.cpp: widget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QWidget \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qwidget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtguiglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtcore-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsysinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlogging.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qflags.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmutex.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnumeric.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qversiontagging.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtgui-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnamespace.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstring.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qchar.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearray.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrefcount.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qarraydata.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringliteral.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringview.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qalgorithms.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiterator.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpair.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringlist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qregexp.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreevent.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmetatype.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmargins.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpaintdevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrect.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsize.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpoint.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpalette.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcolor.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgb.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgba64.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qbrush.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvector.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmatrix.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpolygon.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qregion.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdatastream.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiodevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qline.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtransform.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpainterpath.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimage.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixelformat.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixmap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qshareddata.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhash.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfont.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontmetrics.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcursor.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qkeysequence.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qevent.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvariant.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdebug.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtextstream.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlocale.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qset.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurlquery.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfile.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfiledevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qvector2d.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/QMovie \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmovie.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimagereader.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qeventloop.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimageiohandler.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qplugin.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonobject.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonvalue.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfactoryinterface.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QTimer \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtimer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasictimer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QString \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QWidget \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlogging.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qflags.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmutex.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnumeric.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnamespace.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstring.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qchar.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearray.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrefcount.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qarraydata.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringview.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiterator.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpair.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringlist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qregexp.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmetatype.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmargins.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrect.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsize.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpoint.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpalette.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcolor.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgb.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgba64.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qbrush.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvector.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmatrix.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpolygon.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qregion.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdatastream.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiodevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qline.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtransform.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpainterpath.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimage.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixmap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qshareddata.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhash.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfont.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcursor.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qevent.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvariant.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdebug.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtextstream.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlocale.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qset.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurlquery.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfile.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qvector2d.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtouchdevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/QMovie \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmovie.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimagereader.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qeventloop.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimageiohandler.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qplugin.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonobject.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonvalue.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfactoryinterface.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QTimer \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtimer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QString \
 		moc_predefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/bin/moc
-	/home/cjh/tools/QT/5.12.4/gcc_64/bin/moc $(DEFINES) --include /opt/Raise_Chicken/moc_predefs.h -I/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++ -I/opt/Raise_Chicken -I/home/cjh/tools/QT/5.12.4/gcc_64/include -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include widget.h -o moc_widget.cpp
+		../../../../cjh/tools/QT/5.12.4/gcc_64/bin/moc
+	/home/cjh/tools/QT/5.12.4/gcc_64/bin/moc $(DEFINES) --include /home/bilibili/am/HaveFun/Raise_Chicken/moc_predefs.h -I/home/cjh/tools/QT/5.12.4/gcc_64/mkspecs/linux-g++ -I/home/bilibili/am/HaveFun/Raise_Chicken -I/home/cjh/tools/QT/5.12.4/gcc_64/include -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui -I/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include widget.h -o moc_widget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -864,7 +867,7 @@ compiler_uic_make_all: ui_widget.h
 compiler_uic_clean:
 	-$(DEL_FILE) ui_widget.h
 ui_widget.h: widget.ui \
-		/home/cjh/tools/QT/5.12.4/gcc_64/bin/uic
+		../../../../cjh/tools/QT/5.12.4/gcc_64/bin/uic
 	/home/cjh/tools/QT/5.12.4/gcc_64/bin/uic widget.ui -o ui_widget.h
 
 compiler_yacc_decl_make_all:
@@ -878,266 +881,266 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 ####### Compile
 
 main.o: main.cpp widget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QWidget \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qwidget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtguiglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtcore-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsysinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlogging.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qflags.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmutex.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnumeric.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qversiontagging.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtgui-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnamespace.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstring.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qchar.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearray.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrefcount.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qarraydata.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringliteral.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringview.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qalgorithms.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiterator.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpair.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringlist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qregexp.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreevent.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmetatype.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmargins.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpaintdevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrect.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsize.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpoint.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpalette.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcolor.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgb.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgba64.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qbrush.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvector.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmatrix.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpolygon.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qregion.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdatastream.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiodevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qline.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtransform.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpainterpath.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimage.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixelformat.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixmap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qshareddata.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhash.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfont.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontmetrics.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcursor.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qkeysequence.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qevent.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvariant.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdebug.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtextstream.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlocale.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qset.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurlquery.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfile.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfiledevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qvector2d.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/QMovie \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmovie.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimagereader.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qeventloop.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimageiohandler.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qplugin.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonobject.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonvalue.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfactoryinterface.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QTimer \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtimer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasictimer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QString \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QApplication \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qdesktopwidget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qguiapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qinputmethod.h
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QWidget \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlogging.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qflags.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmutex.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnumeric.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnamespace.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstring.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qchar.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearray.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrefcount.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qarraydata.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringview.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiterator.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpair.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringlist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qregexp.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmetatype.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmargins.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrect.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsize.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpoint.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpalette.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcolor.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgb.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgba64.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qbrush.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvector.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmatrix.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpolygon.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qregion.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdatastream.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiodevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qline.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtransform.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpainterpath.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimage.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixmap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qshareddata.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhash.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfont.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcursor.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qevent.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvariant.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdebug.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtextstream.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlocale.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qset.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurlquery.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfile.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qvector2d.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtouchdevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/QMovie \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmovie.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimagereader.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qeventloop.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimageiohandler.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qplugin.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonobject.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonvalue.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfactoryinterface.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QTimer \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtimer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QString \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QApplication \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 widget.o: widget.cpp widget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QWidget \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qwidget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtguiglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobal.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig-bootstrapped.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtcore-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsystemdetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qprocessordetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcompilerdetection.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtypeinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsysinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlogging.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qflags.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasicatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_bootstrap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qgenericatomic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_cxx11.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_msvc.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobalstatic.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmutex.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnumeric.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qversiontagging.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtgui-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgets-config.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnamespace.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs_win.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstring.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qchar.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearray.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrefcount.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qarraydata.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringliteral.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringalgorithms.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringview.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringbuilder.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qalgorithms.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiterator.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhashfunctions.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpair.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearraylist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringlist.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qregexp.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringmatcher.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreevent.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qscopedpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmetatype.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvarlengtharray.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontainerfwd.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmargins.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpaintdevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrect.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsize.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpoint.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpalette.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcolor.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgb.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgba64.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qbrush.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvector.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmatrix.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpolygon.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qregion.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdatastream.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiodevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qline.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtransform.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpainterpath.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimage.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixelformat.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixmap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qshareddata.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhash.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer_impl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfont.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontmetrics.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontinfo.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qsizepolicy.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcursor.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qkeysequence.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qevent.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvariant.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmap.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdebug.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtextstream.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlocale.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qset.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontiguouscache.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurl.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurlquery.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfile.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfiledevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qvector2d.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/QMovie \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmovie.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimagereader.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qeventloop.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimageiohandler.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qplugin.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpointer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonobject.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonvalue.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfactoryinterface.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QTimer \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtimer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasictimer.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QString \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QWidget \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qwidget.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtguiglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobal.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qconfig.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtcore-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsystemdetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qprocessordetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcompilerdetection.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtypeinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsysinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlogging.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qflags.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasicatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qgenericatomic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_cxx11.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qatomic_msvc.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qglobalstatic.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmutex.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnumeric.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qversiontagging.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtgui-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qnamespace.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qwindowdefs_win.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstring.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qchar.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearray.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrefcount.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qarraydata.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringliteral.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringalgorithms.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringview.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringbuilder.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qalgorithms.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiterator.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhashfunctions.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpair.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbytearraylist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringlist.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qregexp.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qstringmatcher.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreevent.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qscopedpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmetatype.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvarlengtharray.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontainerfwd.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qobject_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmargins.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpaintdevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qrect.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsize.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpoint.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpalette.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcolor.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgb.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qrgba64.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qbrush.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvector.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmatrix.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpolygon.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qregion.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdatastream.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qiodevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qline.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtransform.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpainterpath.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimage.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixelformat.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qpixmap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qshareddata.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qhash.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfont.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontmetrics.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qfontinfo.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qsizepolicy.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qcursor.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qkeysequence.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qevent.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qvariant.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qmap.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qdebug.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtextstream.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qlocale.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qset.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcontiguouscache.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurl.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qurlquery.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfile.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qvector2d.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qtouchdevice.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/QMovie \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qmovie.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimagereader.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qcoreapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qeventloop.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qimageiohandler.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qplugin.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qpointer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonobject.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qjsonvalue.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qfactoryinterface.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QTimer \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qtimer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QString \
 		ui_widget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QVariant \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QApplication \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qdesktopwidget.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qguiapplication.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qinputmethod.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QLabel \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qlabel.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qframe.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QProgressBar \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qprogressbar.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QPushButton \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/home/cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qicon.h
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtCore/QVariant \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QApplication \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qguiapplication.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qinputmethod.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QLabel \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qlabel.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qframe.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QProgressBar \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qprogressbar.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/QPushButton \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		../../../../cjh/tools/QT/5.12.4/gcc_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o widget.o widget.cpp
 
 qrc_pic.o: qrc_pic.cpp 
