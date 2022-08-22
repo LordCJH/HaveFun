@@ -484,6 +484,38 @@ QPushButton:pressed {
     <string>洗澡</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pwf">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>650</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	;
+}
+
+QPushButton:hover {
+	border:3px solid black;
+	background-color:rgba(105, 150, 205, 200);
+}
+
+QPushButton:pressed {
+	background-color:rgba(85, 170, 255, 200);
+}</string>
+   </property>
+   <property name="text">
+    <string>玩耍</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
