@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'widget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.4
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -93,7 +93,7 @@ public:
 "}"));
         kunkun_name = new QLabel(Widget);
         kunkun_name->setObjectName(QString::fromUtf8("kunkun_name"));
-        kunkun_name->setGeometry(QRect(1020, 30, 251, 81));
+        kunkun_name->setGeometry(QRect(940, 30, 331, 81));
         QFont font2;
         font2.setPointSize(30);
         kunkun_name->setFont(font2);
@@ -101,7 +101,7 @@ public:
         kunkun_name->setAlignment(Qt::AlignCenter);
         kunkun_growup_value = new QProgressBar(Widget);
         kunkun_growup_value->setObjectName(QString::fromUtf8("kunkun_growup_value"));
-        kunkun_growup_value->setGeometry(QRect(1040, 230, 221, 21));
+        kunkun_growup_value->setGeometry(QRect(1060, 230, 221, 21));
         QFont font3;
         font3.setPointSize(15);
         kunkun_growup_value->setFont(font3);
@@ -109,15 +109,15 @@ public:
         kunkun_growup_value->setValue(0);
         label_4 = new QLabel(Widget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(980, 190, 51, 21));
+        label_4->setGeometry(QRect(980, 190, 71, 21));
         label_4->setFont(font3);
         kunkun_level = new QLabel(Widget);
         kunkun_level->setObjectName(QString::fromUtf8("kunkun_level"));
-        kunkun_level->setGeometry(QRect(1040, 190, 21, 21));
+        kunkun_level->setGeometry(QRect(1060, 190, 21, 21));
         kunkun_level->setFont(font3);
         label_5 = new QLabel(Widget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(960, 230, 71, 20));
+        label_5->setGeometry(QRect(960, 220, 91, 31));
         label_5->setFont(font3);
         tishi = new QLabel(Widget);
         tishi->setObjectName(QString::fromUtf8("tishi"));
@@ -158,11 +158,11 @@ public:
         jinhua_label->setStyleSheet(QString::fromUtf8("color: rgb(239, 41, 41);"));
         kunkun_stage = new QLabel(Widget);
         kunkun_stage->setObjectName(QString::fromUtf8("kunkun_stage"));
-        kunkun_stage->setGeometry(QRect(1040, 150, 121, 21));
+        kunkun_stage->setGeometry(QRect(1060, 150, 151, 21));
         kunkun_stage->setFont(font3);
         label_6 = new QLabel(Widget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(980, 150, 51, 21));
+        label_6->setGeometry(QRect(980, 150, 61, 21));
         label_6->setFont(font3);
         jinjie = new QPushButton(Widget);
         jinjie->setObjectName(QString::fromUtf8("jinjie"));
