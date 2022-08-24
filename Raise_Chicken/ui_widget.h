@@ -109,11 +109,11 @@ public:
         kunkun_growup_value->setValue(0);
         label_4 = new QLabel(Widget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(980, 190, 71, 21));
+        label_4->setGeometry(QRect(980, 180, 71, 31));
         label_4->setFont(font3);
         kunkun_level = new QLabel(Widget);
         kunkun_level->setObjectName(QString::fromUtf8("kunkun_level"));
-        kunkun_level->setGeometry(QRect(1060, 190, 21, 21));
+        kunkun_level->setGeometry(QRect(1060, 180, 21, 31));
         kunkun_level->setFont(font3);
         label_5 = new QLabel(Widget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
@@ -158,11 +158,11 @@ public:
         jinhua_label->setStyleSheet(QString::fromUtf8("color: rgb(239, 41, 41);"));
         kunkun_stage = new QLabel(Widget);
         kunkun_stage->setObjectName(QString::fromUtf8("kunkun_stage"));
-        kunkun_stage->setGeometry(QRect(1060, 150, 151, 21));
+        kunkun_stage->setGeometry(QRect(1060, 134, 151, 41));
         kunkun_stage->setFont(font3);
         label_6 = new QLabel(Widget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(980, 150, 61, 21));
+        label_6->setGeometry(QRect(980, 140, 61, 31));
         label_6->setFont(font3);
         jinjie = new QPushButton(Widget);
         jinjie->setObjectName(QString::fromUtf8("jinjie"));
@@ -200,11 +200,11 @@ public:
 "}"));
         tiaowu_tishi = new QLabel(Widget);
         tiaowu_tishi->setObjectName(QString::fromUtf8("tiaowu_tishi"));
-        tiaowu_tishi->setGeometry(QRect(1100, 460, 221, 81));
+        tiaowu_tishi->setGeometry(QRect(1040, 460, 331, 81));
         tiaowu_tishi->setFont(font1);
         weishi_tishi = new QLabel(Widget);
         weishi_tishi->setObjectName(QString::fromUtf8("weishi_tishi"));
-        weishi_tishi->setGeometry(QRect(940, 460, 291, 81));
+        weishi_tishi->setGeometry(QRect(920, 460, 391, 81));
         weishi_tishi->setFont(font1);
         bathe = new QPushButton(Widget);
         bathe->setObjectName(QString::fromUtf8("bathe"));
@@ -225,7 +225,9 @@ public:
         pwf = new QPushButton(Widget);
         pwf->setObjectName(QString::fromUtf8("pwf"));
         pwf->setGeometry(QRect(930, 650, 141, 71));
-        pwf->setFont(font1);
+        QFont font6;
+        font6.setPointSize(18);
+        pwf->setFont(font6);
         pwf->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	;\n"
 "}\n"
@@ -266,7 +268,8 @@ public:
         tiaowu_tishi->setText(QApplication::translate("Widget", "\350\247\243\351\224\201\346\226\260\345\212\237\350\203\275\357\274\232\350\267\263\350\210\236", nullptr));
         weishi_tishi->setText(QApplication::translate("Widget", "\347\202\271\345\207\273\345\226\202\351\243\237\346\235\245\350\277\233\350\241\214\351\245\262\345\205\273", nullptr));
         bathe->setText(QApplication::translate("Widget", "\346\264\227\346\276\241", nullptr));
-        pwf->setText(QApplication::translate("Widget", "\347\216\251\350\200\215", nullptr));
+        pwf->setText(QApplication::translate("Widget", "\345\222\214\346\234\213\345\217\213\n"
+"\347\216\251\350\200\215", nullptr));
     } // retranslateUi
 
 };
