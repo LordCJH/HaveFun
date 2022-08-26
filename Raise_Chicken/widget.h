@@ -5,6 +5,9 @@
 #include <QMovie>
 #include <QTimer>
 #include <QString>
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
+#include <QMediaMetaData>
 
 namespace Ui {
 class Widget;
@@ -20,6 +23,8 @@ public:
 
     QMovie *movie;
     QMovie *tishi_movie;
+    QMediaPlayer *ply;
+    QMediaPlaylist *plist;
     int timerId;
     int unlock_skill_timerId;
     int dance_timerId;

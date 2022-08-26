@@ -15,6 +15,24 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    /* music initialize */
+    ply = new QMediaPlayer(this);
+    plist = new QMediaPlaylist;
+
+    plist->setCurrentIndex(0);
+    plist->setPlaybackMode(QMediaPlaylist::Random);
+    plist->addMedia(QUrl("./songs/Superkg - 鸡出没（Superkg remix）.mp3"));
+    plist->addMedia(QUrl("./songs/金色传说竹鼠 - 【鸡你太美】仙剑鸡侠传.mp3"));
+    plist->addMedia(QUrl("./songs/泷 - 蜜雪鸡城.mp3"));
+    plist->addMedia(QUrl("./songs/无名氏的小陈 - 爱鸡—王坤凌.mp3"));
+    plist->addMedia(QUrl("./songs/无名氏的小陈 - 你干嘛哈哈哎哟.mp3"));
+
+    ply->setPlaylist(plist);
+    ply->playlist()->setPlaybackMode(QMediaPlaylist::Random);
+    ply->setVolume(50);
+    ply->play();
+
+    /* volumn switch initialize */
 
     on_volumn = new QIcon(":/pic/dakaiyinliang.jpg");
     off_volumn = new QIcon(":/pic/guanbiyinliang.jpg");
@@ -424,9 +442,11 @@ void Widget::on_volumn_switch_clicked()
     static int count = 0;
     if (count == 0) {
         count = 1;
+        ply->setVolume(0);
         ui->volumn_switch->setIcon(*off_volumn);
     } else {
         count = 0;
+        ply->setVolume(50);
         ui->volumn_switch->setIcon(*on_volumn);
     }
 
