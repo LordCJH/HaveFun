@@ -40,12 +40,17 @@ Widget::Widget(QWidget *parent) :
     ui->volumn_switch->setIcon(*on_volumn);
     ui->volumn_switch->setIconSize(ui->volumn_switch->size());
 
+    /* skill button initialize */
+
     ui->jinjie->hide();
     ui->dance->hide();
     ui->bathe->hide();
     ui->pwf->hide();
 
     ui->tiaowu_tishi->hide();
+
+    /* jinjie widget initialize */
+    ui->zhongjijinhua_widget->hide();
 
     movie = new QMovie();
     tishi_movie = new QMovie();
@@ -334,7 +339,7 @@ void Widget::on_seed_food_clicked()
         kunkun_level++;
         ui->kunkun_level->setText("9");
 
-        kunkun_experience = 4;
+        kunkun_experience = 0;
         kunkun_experience_max = 4;
 
         /* 设置坤坤成长进度条最大值 */
@@ -350,6 +355,76 @@ void Widget::on_seed_food_clicked()
         ui->tishi->show();
         timerId = startTimer(1000);
         break;
+
+    case 37:
+
+
+
+
+//        if (kunkun_stage != 3) {
+//            //qDebug("%d", kunkun_stage);
+//            break;
+//        }
+
+//        ui->kunkun_name->setText("远古虚鲲");
+
+//        movie->stop();
+//        movie->setFileName(":/pic/yiniantongkun.gif");
+//        movie->start();
+
+        /* 设置坤坤等级 */
+        kunkun_level++;
+        ui->kunkun_level->setText("10");
+
+        kunkun_experience = 5;
+        kunkun_experience_max = 5;
+
+        /* 设置坤坤成长进度条最大值 */
+        ui->kunkun_growup_value->setMaximum(kunkun_experience_max);
+        ui->kunkun_growup_value->setValue(kunkun_experience);
+
+        /* 设置升级提示 */
+        ui->seed_food->hide();
+        ui->bathe->hide();
+        ui->dance->hide();
+//        ui->jinjie->setText("终极进化");
+//        ui->jinjie->show();
+        ui->pwf->hide();
+        ui->jinjie->hide();
+
+        ui->zhongjijinhua_widget->show();
+
+        ui->jinhua_label->show();
+        ui->tishi->show();
+
+        timerId = startTimer(1000);
+        break;
+//    case 42:
+
+//        if (kunkun_stage != 3) {
+//            //qDebug("%d", kunkun_stage);
+//            break;
+//        }
+
+
+//        /* 设置坤坤等级 */
+//        kunkun_level++;
+//        ui->kunkun_level->setText("11");
+
+//        kunkun_experience = 0;
+//        kunkun_experience_max = 6;
+
+//        /* 设置坤坤成长进度条最大值 */
+//        ui->kunkun_growup_value->setMaximum(kunkun_experience_max);
+//        ui->kunkun_growup_value->setValue(kunkun_experience);
+
+//        /* 设置升级提示 */
+
+//        ui->jinhua_label->show();
+//        ui->tishi->show();
+
+//        timerId = startTimer(1000);
+//        break;
     default:
         break;
     }
@@ -542,4 +617,99 @@ void Widget::on_pwf_clicked()
 
 
     bathe_timerId = startTimer(3000);
+}
+
+void Widget::on_tt_pushButton_clicked()
+{
+    kunkun_stage++;
+    ui->kunkun_stage->setText("3（通天）");
+    movie->stop();
+    movie->setFileName(":/pic/yiniantongkun.gif");
+    movie->start();
+
+    ui->kunkun_name->setText("通天坤");
+
+    ui->weishi_tishi->setText("一念通坤，神鸡无惧！");
+    ui->weishi_tishi->move(1000, 330);
+    ui->weishi_tishi->show();
+
+    ui->seed_food->show();
+    ui->bathe->show();
+    ui->dance->show();
+    ui->pwf->show();
+
+    plist->clear();
+    plist->addMedia(QUrl("./songs/一念通坤.mp3"));
+
+    ply->stop();
+    ply->setPlaylist(plist);
+    ply->playlist()->setPlaybackMode(QMediaPlaylist::Loop);
+    ply->setVolume(100);
+    ply->play();
+
+
+    ui->zhongjijinhua_widget->hide();
+}
+
+void Widget::on_hk_pushButton_clicked()
+{
+    kunkun_stage++;
+    ui->kunkun_stage->setText("3（化鲲）");
+    movie->stop();
+    movie->setFileName(":/pic/xukun.gif");
+    movie->start();
+
+
+    ui->kunkun_name->setText("蔡虚鲲");
+
+    ui->weishi_tishi->setText("北溟有鸡，其名为坤！");
+    ui->weishi_tishi->move(1000, 330);
+    ui->weishi_tishi->show();
+
+    ui->seed_food->show();
+    ui->bathe->show();
+    ui->dance->show();
+    ui->pwf->show();
+
+    plist->clear();
+    plist->addMedia(QUrl("./songs/泷 - 化鸡飞.mp3"));
+
+    ply->stop();
+    ply->setPlaylist(plist);
+    ply->playlist()->setPlaybackMode(QMediaPlaylist::Loop);
+    ply->setVolume(50);
+    ply->play();
+
+    ui->zhongjijinhua_widget->hide();
+}
+
+void Widget::on_by_pushButton_clicked()
+{
+    kunkun_stage++;
+    ui->kunkun_stage->setText("3（变异）");
+    movie->stop();
+    movie->setFileName(":/pic/300w.gif");
+    movie->start();
+
+    ui->kunkun_name->setText("价值300万的鸡");
+
+    ui->weishi_tishi->setText("坤坤获得一笔300w的打赏,\n老板是：唯一的姐！");
+    ui->weishi_tishi->move(950, 330);
+    ui->weishi_tishi->show();
+
+    ui->seed_food->show();
+    ui->bathe->show();
+    ui->dance->show();
+    ui->pwf->show();
+
+    plist->clear();
+    plist->addMedia(QUrl("./songs/唯一的姐.mp3"));
+
+    ply->stop();
+    ply->setPlaylist(plist);
+    ply->playlist()->setPlaybackMode(QMediaPlaylist::Loop);
+    ply->setVolume(100);
+    ply->play();
+
+    ui->zhongjijinhua_widget->hide();
 }

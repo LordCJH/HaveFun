@@ -172,7 +172,7 @@ QPushButton:pressed {
     <rect>
      <x>1060</x>
      <y>180</y>
-     <width>21</width>
+     <width>41</width>
      <height>31</height>
     </rect>
    </property>
@@ -267,7 +267,7 @@ color: rgb(239, 41, 41);
     </font>
    </property>
    <property name="text">
-    <string>1.0</string>
+    <string>1.1</string>
    </property>
   </widget>
   <widget class="QPushButton" name="volumn_switch">
@@ -516,6 +516,149 @@ QPushButton:pressed {
     <string>和朋友
 玩耍</string>
    </property>
+  </widget>
+  <widget class="QWidget" name="zhongjijinhua_widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>270</y>
+     <width>461</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="tt_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color:rgba(85, 170, 255,200);
+	color: rgb(255, 255, 0);
+	border-radius:30px;
+}
+
+QPushButton:hover{
+	border:3px solid black;
+}
+
+QPushButton:pressed{
+	background-color:rgba(85, 170, 255,200);
+}</string>
+    </property>
+    <property name="text">
+     <string>通天</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hk_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>220</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color:rgba(85, 100, 231,180);
+	color: rgb(0, 85, 255);
+	border-radius:30px;
+}
+
+QPushButton:hover{
+	border:3px solid black;
+}
+
+QPushButton:pressed{
+	background-color:rgba(85, 170, 255,200);
+}</string>
+    </property>
+    <property name="text">
+     <string>化鲲</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="by_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>220</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color:rgba(85, 150, 155,250);
+	border-radius:30px;
+	color: rgb(85, 255, 0);
+}
+
+QPushButton:hover{
+	border:3px solid black;
+}
+
+QPushButton:pressed{
+	background-color:rgba(85, 170, 255,200);
+}</string>
+    </property>
+    <property name="text">
+     <string>变异</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="zzjh_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>441</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文行楷</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文行楷&quot;;</string>
+    </property>
+    <property name="text">
+     <string>通天：以凡鸡之躯，借天地灵气，得通天神
+力！
+化鲲：让坤坤摆脱凡人肉身的束缚，逍遥在
+这天地之间！
+变异：是坤坤进入完全不同的发育路线，能
+让坤坤走向致富之路，会收获一笔不错的巨
+款哦！</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

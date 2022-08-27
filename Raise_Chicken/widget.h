@@ -54,6 +54,12 @@ private slots:
 
     void on_pwf_clicked();
 
+    void on_tt_pushButton_clicked();
+
+    void on_hk_pushButton_clicked();
+
+    void on_by_pushButton_clicked();
+
 private:
     Ui::Widget *ui;
 };
